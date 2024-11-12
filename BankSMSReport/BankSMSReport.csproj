@@ -3,12 +3,14 @@
     <TargetFramework>net8.0-android</TargetFramework>
     <SupportedOSPlatformVersion>25</SupportedOSPlatformVersion>
     <OutputType>Exe</OutputType>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationId>com.amhrezazade.BankSMSReport</ApplicationId>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\layout\card_view.xml" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.Legacy.Support.Core.UI" Version="1.0.0.31" />
     <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.8.7.1" />
