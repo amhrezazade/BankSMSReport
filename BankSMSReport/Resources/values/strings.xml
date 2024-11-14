@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">BankSMSReport</string>
-    <string name="app_text">Hello, Android!</string>
+    <string name="edit_btn_text">Edit!</string>
 </resources>

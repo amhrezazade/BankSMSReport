@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layoutDirection="ltr">
+    android:layoutDirection="ltr"
+    android:id="@+id/main_layout">
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:scrollbars="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:id="@+id/main_layout_recyclerView" />
 
-
-
-
-    </androidx.recyclerview.widget.RecyclerView>
 
 
 </RelativeLayout>

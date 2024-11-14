@@ -2,122 +2,82 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-
 
     <androidx.cardview.widget.CardView
         android:layout_margin="10dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cardViewContentActive"
-        >
+        android:background="@android:color/black"
+        android:id="@+id/card_View_content">
+
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:background="#1a1a1a"
-            android:layout_height="match_parent"
-            android:id="@+id/ContentItemView">
+            android:layout_height="wrap_content"
+            android:id="@+id/content_item_view">
 
 
             <Button
-                android:layout_below="@+id/tvDesContent"
-                android:text="فایل پیوستی"
+                android:text="Edit"
                 android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:textColor="#ffcc00"
                 android:background="#262626"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnFileContent" />
+                android:id="@+id/btnFileContent"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="false"
+                android:layout_marginTop="0.0dp"
+                android:layout_marginBottom="0.0dp" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_below="@+id/ivImageContent"
-                android:layout_alignParentRight="true"
+            <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/ic_share"
+                android:src="@drawable/menu"
                 android:id="@+id/ivImageShareContent"
-                android:layout_marginRight="9.5dp" />
+                android:contentDescription="description"
+                android:layout_below="@+id/tvTitleContent" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/ivImageContent"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_alignParentTop="true"
-                android:src="@drawable/ic_notif"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_alignParentRight="true"/>
 
             <TextView
                 android:id="@+id/tvTitleContent"
-                android:layout_below="@+id/tvdefinerContentItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="نمونه یک عنوان"
+                android:text="This is a line of string"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="#ffd6cc"
-                android:layout_toLeftOf="@+id/ivImageContent"
+                android:textColor="#FFFF"
+                android:layout_alignParentTop="false"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="0.4dp" />
+                android:layout_marginTop="0.4dp"
+                android:padding="10dp" />
 
             <TextView
-                android:id="@+id/tvDesContent"
+                android:id="@+id/tvText"
                 android:layout_below="@+id/tvTitleContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="این یک توضیح بلند است و نشان دهنده یک توضیح برای عنوان است"
-                android:textSize="16sp"
-                android:textColor="@android:color/white"
-                android:layout_toLeftOf="@+id/ivImageContent"
-                android:layout_marginRight="5.6dp"
-                android:layout_marginTop="1.5dp"
-                android:paddingBottom="10dp"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvDateTime"
+                android:text="یانک سامان سلام من این مورد را میبینم"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#ffd6cc"
+                android:layout_alignParentTop="false"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="0.4dp"
+                android:padding="10dp"
+                android:layout_alignParentEnd="true" />
+            
+            <TextView
+                android:id="@+id/tvTag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:text=" Reg:1399/05/08 , 18:45"
-                android:textColor="#4da6ff"
-                android:textSize="15sp" />
+                android:text="FOOD"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="5dp" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_below="@+id/tvDateTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginLeft="10dp"
-                android:text="نمره 2 از 4"
-                android:textColor="#ff5c33"
-                android:textSize="15sp"
-                android:id="@+id/tvdefinerContentItem"
-                android:accessibilityHeading="false" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvNote1"
-                android:layout_below="@+id/tvDesContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:gravity="center"
-                android:text="1399/05/08 , 18:45"
-                android:textColor="#ccffdd"
-                android:textSize="15sp" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvNote2"
-                android:layout_below="@+id/tvNote1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:gravity="center"
-                android:text="1399/05/08 , 18:45"
-                android:textColor="#ff8080"
-                android:textSize="15sp" />
+        
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
