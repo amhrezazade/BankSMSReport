@@ -1,7 +1,7 @@
 ﻿using Android.Views;
 using AndroidX.RecyclerView.Widget;
 
-namespace BankSMSReport
+namespace BankSMSReport.ContentItemList
 {
 
     public class ContentItemAdapter(ContentItem[] Items, int Resource) : RecyclerView.Adapter

@@ -18,11 +18,10 @@
             android:layout_marginBottom="12.2dp">
 
             <Button
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:text="Update"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btupdate" />
+                android:id="@+id/btn_sms_update" />
 
             <Space
                 android:layout_width="wrap_content"
